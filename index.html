@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body class=" w-screen h-screen overflow-x-hidden bg-[rgb(231,231,231)]">
+    <section class="flex flex-col items-center w-full" >
+        <div class="bg-[url(./assets/img/Bg.svg)] w-full h-[35vh] bg-no-repeat bg-cover" id="bg">
+        </div>
+        <div class="min-w-[30rem] lg:min-w-[50rem]  absolute top-[9rem] lg:top-[5rem]">
+            <div class="flex flex-col items-center justify-between">
+                <div class="flex items-center justify-between w-full h-[5rem] mb-[2rem]" onclick="bg()" id="moon">
+                    <h1 class="text-3xl tracking-[1rem] font-semibold text-white">TODO</h1>
+                    <ion-icon name="moon-outline" class="text-4xl text-white"></ion-icon>
+                </div>
+                <div  class="flex items-center w-full h-[4rem] px-[20px] bg-white rounded-lg mb-[2rem] font-semibold ">
+                    <img src="./assets/img/Oval Copy.png" alt="" class=" h-[2rem] " id="img">
+                    <input type="text" placeholder=" Create a new todo…" id="input"> 
+           
+        </div>
+            
+            </div>
+
+            <div class=" font-semibold" id="task">
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white rounded-t-lg">
+                    <div class="flex">
+                        <img src="./assets/img/Group 4.svg" alt="" class="mr-5">
+                        <p class=" line-through opacity-35">Complete online JavaScript course</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <div class="flex">
+                        <ion-icon name="radio-button-off-outline" class="text-2xl mr-5 opacity-35"></ion-icon>
+                        <p class="opacity-60">Jog around the park 3x</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <div class="flex">
+                        <ion-icon name="radio-button-off-outline" class="text-2xl mr-5 opacity-35"></ion-icon>
+                        <p class="opacity-60">10 minutes meditation</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <div class="flex">
+                        <ion-icon name="radio-button-off-outline" class="text-2xl mr-5 opacity-35"></ion-icon>
+                        <p class="opacity-60">Read for 1 hour</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <div class="flex">
+                        <ion-icon name="radio-button-off-outline" class="text-2xl mr-5 opacity-35"></ion-icon>
+                        <p class="opacity-60">Pick up groceries</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <div class="flex">
+                        <ion-icon name="radio-button-off-outline" class="text-2xl mr-5 opacity-35"></ion-icon>
+                        <p class="opacity-60">Complete Todo App on Frontend Mentor</p>
+                    </div>
+                    <ion-icon name="close-outline" class="text-3xl font-extralight"></ion-icon>
+                </div>
+                <div class="flex items-center justify-between w-full h-[4rem] px-[20px] bg-white">
+                    <p class="opacity-35">5 items left</p>
+                    <div class="w-[35%] items-center justify-between hidden lg:flex">
+                        <a href="#" class="text-blue-500">All</a>
+                        <a href="#" class="opacity-35 hover:opacity-100">Active</a>
+                        <a href="#" class="opacity-35 hover:opacity-100">Completed</a>
+                    </div>
+                    <a class="opacity-35">Clear Completed</a>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between font-semibold w-full h-[4rem] bg-white px-28 mt-[4rem] lg:hidden">
+                <a href="#" class="text-blue-500">All</a>
+                <a href="#" class="opacity-35 hover:opacity-100">Active</a>
+                <a href="#" class="opacity-35 hover:opacity-100">Completed</a>
+            </div>
+            <p class=" font-semibold opacity-50 text-center mt-6">Drag and drop to reorder list</p>
+        </div>
+    </section>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
